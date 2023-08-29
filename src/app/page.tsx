@@ -1,11 +1,12 @@
 import React from "react";
-import NavBar from "@/commons/NavBar";
-import "./globals.css";
+import NavBar from "@/components/NavBar";
+import Home from "@/sections/Home";
 
 const Main = () => {
   return (
-    <div className="main-background min-w-full min-h-[100vh]">
+    <div className="main-background min-w-full h-[100vh]">
       <NavBar />
+      <Home />
     </div>
   );
 };
