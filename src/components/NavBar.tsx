@@ -33,7 +33,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex text-white justify-center items-center absolute right-1/2 translate-x-2/4 bottom-10 w-[15rem] h-[4.3rem] glass-effect rounded-[3rem]">
+    <nav className="flex text-white justify-center items-center fixed right-1/2 translate-x-2/4 bottom-10 w-[15rem] h-[4.3rem] glass-effect rounded-[3rem]">
       <ul className="flex gap-10">
         <li>
           <IconButton

@@ -1,0 +1,29 @@
+.button-component-outlined {
+  border: 1px solid #14b8a6;
+  color: #14b8a6;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+  transition: ease-out 0.15s;
+}
+
+.button-component-outlined:hover {
+  border: 1px solid #172554;
+  color: #172554;
+  background-color: #ffff;
+  transition: ease-in 0.15s;
+}
+
+.button-component-contained {
+  border: 1px solid #172554;
+  color: #172554;
+  background-color: #14b8a6;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+  transition: ease-out 0.15s;
+}
+.button-component-contained:hover {
+  background-color: #ffff;
+  transition: ease-in 0.15s;
+}
