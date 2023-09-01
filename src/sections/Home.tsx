@@ -1,15 +1,10 @@
 "use client";
 import React from "react";
-import { Cabin } from "next/font/google";
 import Image from "next/image";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Button from "@/commons/Button";
+import ScrollButton from "@/commons/ScrollButton";
 
-const cabin = Cabin({
-  weight: "400",
-  style: "normal",
-  subsets: ["latin"],
-});
 const Home = () => {
   const [text] = useTypewriter({
     words: ["Desarrollador Fullstack"],
@@ -20,9 +15,13 @@ const Home = () => {
 
   return (
     <section
-      className={`${cabin.className} min-h-[75vh] w-full flex justify-center  flex-col`}
+      id="home"
+      className={
+        "h-[100vh] max-w-full flex justify-center items-center flex-col gap-[2.5rem] relative"
+      }
     >
-      <div className="relative w-full text-white text-center flex justify-center items-center flex-col">
+      <ScrollButton toId="about-me" crossAxis="80%" mainAxis="50%" />
+      <div className="relative w-full text-white text-center flex justify-center items-center flex-col mb-5">
         <h1 className="text-xl">Hola, soy</h1>
         <Image
           alt="rodrigo escalera"
@@ -31,20 +30,21 @@ const Home = () => {
           height={100}
           className="rounded-full scale-150 m-10"
         />
-        <h1 className="font-bold text-3xl mb-[3rem]">Rodrigo Escalera</h1>
-        <h1 className="absolute bottom-0 text-4xl">
+        <h2 className="font-bold text-3xl mb-[3rem]">Rodrigo Escalera</h2>
+        <h2 className="absolute bottom-0 text-4xl">
           {`${text}`}
           <span>
             <Cursor cursorStyle="|" cursorColor="#14b8a6" />
           </span>{" "}
-        </h1>
+        </h2>
       </div>
-      <div className="mt-5 w-full flex justify-center gap-10 h-[10vh]">
+      <div className="w-full flex justify-center gap-10 h-[10vh] mb-[5rem]">
         <Button className="scale-[1.2]">Descargar CV</Button>
         <Button className="scale-[1.2]" buttonType="contained">
           Hablemos!
         </Button>
       </div>
+      <hr className="isolator absolute bottom-0" />
     </section>
   );
 };

@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       colors: {
         darkGreen: "#14b8a6",
+        darkBlue: "#172554",
       },
     },
   },

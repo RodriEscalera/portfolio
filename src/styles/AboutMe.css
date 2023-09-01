@@ -1,0 +1,18 @@
+.xp-projects-square {
+  border: 1.5px solid #14b8a6;
+  transition: ease-out 0.15s;
+}
+.xp-projects-square:hover {
+  border: 1.5px solid #14b8a6;
+  background: transparent;
+  transition: ease-in 0.15s;
+}
+
+.profile-picture-animate {
+  transform: translateY(-5%) translateX(5%);
+  transition: ease-out 0.15s;
+}
+.profile-picture-animate:hover {
+  transform: translateY(0%) translateX(0%);
+  transition: ease-in 0.15s;
+}

@@ -2,23 +2,31 @@
 import React, { useState } from "react";
 import "../styles/NavBar.css";
 import { AiOutlineHome } from "react-icons/ai";
-import { BiUser } from "react-icons/bi";
+import { BiUser, BiBook } from "react-icons/bi";
 import { BsBriefcase } from "react-icons/bs";
-
 import IconButton from "@/commons/IconButton";
+import { GoMail } from "react-icons/go";
+import { useRouter } from "next/navigation";
+
 const NavBar = () => {
   type TselectionNavButtons = {
     home: boolean;
-    me: boolean;
+    "about-me": boolean;
     experience: boolean;
+    projects: boolean;
+    contact: boolean;
   };
 
   const [selectionNavButtons, setSelectionNavButtons] =
     useState<TselectionNavButtons>({
       home: true,
-      me: false,
+      "about-me": false,
       experience: false,
+      projects: false,
+      contact: false,
     });
+
+  const router = useRouter();
 
   const onSelectNavButton = (e: React.MouseEvent<HTMLButtonElement>) => {
     const name = e.currentTarget.name;
@@ -30,10 +38,11 @@ const NavBar = () => {
     newSelection[name] = true;
 
     setSelectionNavButtons(newSelection as TselectionNavButtons);
+    router.push(`/#${name}`);
   };
 
   return (
-    <nav className="flex text-white justify-center items-center fixed right-1/2 translate-x-2/4 bottom-10 w-[15rem] h-[4.3rem] glass-effect rounded-[3rem]">
+    <nav className="z-30 flex text-white justify-center items-center fixed right-1/2 translate-x-2/4 bottom-[2rem] w-[22rem] h-[4.3rem] glass-effect rounded-[3rem]">
       <ul className="flex gap-10">
         <li>
           <IconButton
@@ -46,8 +55,8 @@ const NavBar = () => {
         <li>
           <IconButton
             onClick={onSelectNavButton}
-            name="me"
-            isSelected={selectionNavButtons.me}
+            name="about-me"
+            isSelected={selectionNavButtons["about-me"]}
             icon={<BiUser />}
           />
         </li>
@@ -56,7 +65,23 @@ const NavBar = () => {
             onClick={onSelectNavButton}
             name="experience"
             isSelected={selectionNavButtons.experience}
+            icon={<BiBook />}
+          />
+        </li>
+        <li>
+          <IconButton
+            onClick={onSelectNavButton}
+            name="projects"
+            isSelected={selectionNavButtons.projects}
             icon={<BsBriefcase />}
+          />
+        </li>
+        <li>
+          <IconButton
+            onClick={onSelectNavButton}
+            name="contact"
+            isSelected={selectionNavButtons.contact}
+            icon={<GoMail />}
           />
         </li>
       </ul>

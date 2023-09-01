@@ -1,0 +1,13 @@
+.scroll-button-animation {
+  animation: scroll-button-animation-keyframes 1s infinite;
+}
+
+@keyframes scroll-button-animation-keyframes {
+  0%,
+  100% {
+    transform: translateY(-15%);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+}
