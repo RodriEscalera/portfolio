@@ -45,13 +45,14 @@ const AboutMe = () => {
           </div>
           <div className="w-full flex max-[660px]:justify-center max-[660px]:text-center">
             <p className="max-[660px]:w-[85%] min-[660px]:w-[75%] max-[360px]:scale-[0.9] max-[360px]:h-[20%] max-[360px]:w-[100%]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-              ad repellat consequuntur quibusdam molestiae dolor modi provident
-              rem odio nobis, natus incidunt aut sapiente fugit possimus
-              voluptas cumque itaque! Voluptatum! Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Id, sed quidem iure quod velit dolor
-              nemo molestias! Vitae distinctio aliquam, assumenda neque,
-              expedita aspernatur voluptatem non optio ut dolores excepturi.{" "}
+              Soy un desarrollador Fullstack con 2 años de experiencia en IT,
+              especializado en el diseño, desarrollo e implementación de
+              aplicaciones web de alta calidad. Mi enfoque en la colaboración y
+              la satisfacción del cliente me permite trabajar de la mano con
+              otros profesionales para alcanzar los objetivos de la empresa.
+              Actualmente, estoy inmerso en proyectos desafiantes que impulsan
+              mi constante aprendizaje. ¡Espero poder contribuir a tu próximo
+              proyecto!
             </p>
           </div>
         </div>

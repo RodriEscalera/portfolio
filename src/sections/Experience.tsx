@@ -5,9 +5,7 @@ function Experience() {
     <section
       id="experience"
       className="h-[100vh] max-w-full flex flex-col items-center justify-center"
-    >
-      Experience
-    </section>
+    ></section>
   );
 }
 
