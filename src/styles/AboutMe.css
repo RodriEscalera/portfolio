@@ -1,6 +1,7 @@
 .xp-projects-square {
   border: 1.5px solid #14b8a6;
   transition: ease-out 0.15s;
+  cursor: pointer;
 }
 .xp-projects-square:hover {
   border: 1.5px solid #14b8a6;

@@ -32,7 +32,7 @@ const AboutMe = () => {
               <FaRegNewspaper className="w-[2rem] h-[2rem]" />
               <div className="text-center">
                 <h3 className="text-2xl">Experiencia</h3>
-                <p>+2 años</p>
+                <p>+1 años</p>
               </div>
             </div>
             <div className="w-[13rem] h-[10rem] max-[415px]:scale-[0.8] xp-projects-square bg-darkGreen rounded-[1rem] flex flex-col justify-center items-center gap-5">
