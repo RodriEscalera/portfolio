@@ -19,7 +19,7 @@ const InfoBox: FC<IInfoBox> = ({
 }) => {
   return (
     <div className="h-full w-full rounded-3xl bg-darkGreen p-3 ">
-      <div id="layout" className="border w-full h-full flex flex-col">
+      <div id="layout" className="w-full h-full flex flex-col">
         <div>
           <h2 className="text-3xl text-center">{positionName}</h2>
         </div>

@@ -26,16 +26,16 @@ const Home = () => {
         <Image
           alt="rodrigo escalera"
           src="/images/profile-picture.jpg"
-          width={100}
-          height={100}
-          className="rounded-full scale-150 m-10"
+          width={1000}
+          height={1000}
+          className="rounded-full scale-150 m-10 w-[5rem] h-[5rem]"
         />
         <h2 className="font-bold text-3xl mb-[3rem]">Rodrigo Escalera</h2>
         <h2 className="absolute bottom-0 text-4xl">
           {`${text}`}
           <span>
             <Cursor cursorStyle="|" cursorColor="#14b8a6" />
-          </span>{" "}
+          </span>
         </h2>
       </div>
       <div className="w-full flex justify-center gap-10 h-[10vh] mb-[5rem]">
