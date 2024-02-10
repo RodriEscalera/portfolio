@@ -21,11 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${cabin.className} main-background w-full min-h-[100vh]`}
-      >
-        {children}
-      </body>
+      <body className={`${cabin.className} main-background`}>{children}</body>
     </html>
   );
 }

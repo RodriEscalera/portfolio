@@ -1,5 +1,5 @@
 import React, { ComponentPropsWithoutRef, FC } from "react";
-import "../styles/Button.css";
+import style from "./Button.module.css";
 
 interface IButton extends ComponentPropsWithoutRef<"button"> {
   children: string;
@@ -20,7 +20,9 @@ const Button: FC<IButton> = ({ children, buttonType, className }) => {
     }
   })();
   return (
-    <button className={`${buttonStyleClass} ${className}`}>{children}</button>
+    <button className={`${style[buttonStyleClass]} ${className}`}>
+      {children}
+    </button>
   );
 };
 

@@ -5,7 +5,7 @@ import AboutMe from "@/sections/AboutMe";
 import Experience from "@/sections/Experience";
 const Main = () => {
   return (
-    <div>
+    <div className="w-[100%] min-h-[100vh]">
       <NavBar />
       <Home />
       <AboutMe />

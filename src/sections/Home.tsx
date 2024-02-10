@@ -2,8 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Button from "@/commons/Button";
-import ScrollButton from "@/commons/ScrollButton";
+import Button from "@/commons/Button/Button";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -20,7 +19,6 @@ const Home = () => {
         "h-[100vh] max-w-full flex justify-center items-center flex-col gap-[2.5rem] relative"
       }
     >
-      <ScrollButton toId="about-me" crossAxis="80%" mainAxis="50%" />
       <div className="relative w-full text-white text-center flex justify-center items-center flex-col mb-5">
         <h1 className="text-xl">Hola, soy</h1>
         <Image

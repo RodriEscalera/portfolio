@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiUser, BiBook } from "react-icons/bi";
 import { BsBriefcase } from "react-icons/bs";
-import IconButton from "@/commons/IconButton";
+import IconButton from "@/commons/IconButton/IconButton";
 import { GoMail } from "react-icons/go";
 import { useRouter } from "next/navigation";
 import style from "./NavBar.module.css";

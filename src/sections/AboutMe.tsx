@@ -28,14 +28,14 @@ const AboutMe = () => {
         </div>
         <div className="w-full h-full flex flex-col max-[660px]:items-center min-[660px]:items-start justify-center gap-y-5">
           <div className="flex max-[660px]:w-[85%] min-[660px]:w-[75%] justify-center gap-5 ">
-            <div className="w-[13rem] h-[10rem] xp-projects-square max-[415px]:scale-[0.8] bg-darkGreen rounded-[1rem] flex flex-col justify-center items-center gap-5">
+            <div className="w-[10rem] h-[10rem] xp-projects-square max-[415px]:scale-[0.8] bg-darkGreen rounded-[1rem] flex flex-col justify-center items-center gap-5">
               <FaRegNewspaper className="w-[2rem] h-[2rem]" />
               <div className="text-center">
                 <h3 className="text-2xl">Experiencia</h3>
                 <p>+2 años</p>
               </div>
             </div>
-            <div className="w-[13rem] h-[10rem] max-[415px]:scale-[0.8] xp-projects-square bg-darkGreen rounded-[1rem] flex flex-col justify-center items-center gap-5">
+            <div className="w-[10rem] h-[10rem] max-[415px]:scale-[0.8] xp-projects-square bg-darkGreen rounded-[1rem] flex flex-col justify-center items-center gap-5">
               <VscFolderActive className="w-[2rem] h-[2rem]" />
               <div className="text-center">
                 <h3 className="text-2xl">Proyectos</h3>
