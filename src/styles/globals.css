@@ -20,9 +20,22 @@
   border: #14b8a6;
 }
 
+.main-page-container {
+  animation: main-page-animation 1s;
+}
+
+@keyframes main-page-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   color: white;
-  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
