@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import NavBar from "@/components/Navbar/NavBar";
-import Home from "@/sections/Home";
-import AboutMe from "@/sections/AboutMe";
-import Experience from "@/sections/Experience";
+import Home from "@/sections/Home/Home";
+import AboutMe from "@/sections/AboutMe/AboutMe";
+import Experience from "@/sections/Experience/Experience";
 import wait from "@/utils/wait";
 import Loader from "@/components/Loader/Loader";
 
