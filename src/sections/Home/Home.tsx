@@ -45,14 +45,14 @@ const Home = () => {
     <section
       id="home"
       className={
-        "h-[100vh] max-w-full flex justify-center items-center flex-col gap-[2.5rem] relative"
+        "h-[100vh] max-w-full flex justify-center items-center flex-col relative"
       }
     >
-      <div className="relative w-full text-white text-center flex justify-center items-center flex-col mb-5">
+      <div className="relative w-full text-white text-center flex justify-center items-center flex-col">
         <h1 className="text-xl">Hola, soy</h1>
         <h2 className="font-bold text-3xl mb-[3rem]">Rodrigo Escalera</h2>
         <div className="mt-[1rem] flex justify-center items-center">
-          <h2 className="absolute bottom-0 text-4xl">
+          <h2 className={style["dinamic-text"]}>
             {`${text}`}
             <span>
               <Cursor cursorStyle="|" cursorColor="#14b8a6" />
@@ -60,19 +60,24 @@ const Home = () => {
           </h2>
         </div>
       </div>
-      <div className="w-full flex justify-center gap-10">
+
+      <div className="w-full flex justify-center gap-10 mt-[2rem]">
         <Button className="scale-[1.2]">Descargar CV</Button>
         <Button className="scale-[1.2]" buttonType="contained">
           Hablemos!
         </Button>
       </div>
-      <div className={style["icons-div"]}>
-        {socialMedia.map((element: ISocialMedia, index: number) => (
-          <a target="_blank" rel="noreferrer" href={element.link} key={index}>
-            <div className={style["icon-container"]}>{element.icon}</div>
-          </a>
-        ))}
+
+      <div className={style["icons-div-container"]}>
+        <div className={style["icons-div"]}>
+          {socialMedia.map((element: ISocialMedia, index: number) => (
+            <a target="_blank" rel="noreferrer" href={element.link} key={index}>
+              <div className={style["icon-container"]}>{element.icon}</div>
+            </a>
+          ))}
+        </div>
       </div>
+
       <hr className="isolator absolute bottom-0" />
     </section>
   );

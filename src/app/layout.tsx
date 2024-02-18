@@ -21,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${cabin.className} main-background`}>{children}</body>
+      <body className={`${cabin.className} main-background`}>
+        {<div className="pattern">{children}</div>}
+      </body>
     </html>
   );
 }

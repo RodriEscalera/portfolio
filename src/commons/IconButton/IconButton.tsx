@@ -18,7 +18,9 @@ const IconButton: FC<IiconButton> = ({
       name={name}
       className={`${isSelected && "bg-darkGreen"} ${
         !isSelected && style["hover-effect"]
-      } w-[1.7rem] h-[1.7rem] flex scale-[1.6] justify-center items-center rounded-full ${className}`}
+      } w-[1.7rem] h-[1.7rem] flex scale-[1.6] justify-center items-center rounded-full ${
+        style["default"]
+      } ${className}`}
       {...iconButtonProps}
     >
       {icon}

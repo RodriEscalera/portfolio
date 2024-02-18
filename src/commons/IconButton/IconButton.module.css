@@ -1,8 +1,14 @@
+.default {
+  transition: ease-out 0.15s;
+}
+
 .hover-effect:hover {
   background-color: #087064;
+  transition: ease-in 0.15s;
 }
 
 .hover-effect:hover svg {
   color: white;
   opacity: 1;
+  transition: ease-in 0.15s;
 }

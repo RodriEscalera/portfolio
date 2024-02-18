@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import NavBar from "@/components/Navbar/NavBar";
 import Home from "@/sections/Home/Home";
 import AboutMe from "@/sections/AboutMe/AboutMe";
-import Experience from "@/sections/Experience/Experience";
+// import Experience from "@/sections/Experience/Experience";
 import wait from "@/utils/wait";
 import Loader from "@/components/Loader/Loader";
 
@@ -26,7 +26,7 @@ const Main = () => {
           <NavBar />
           <Home />
           <AboutMe />
-          <Experience />
+          {/* <Experience /> */}
         </div>
       ) : (
         <Loader />

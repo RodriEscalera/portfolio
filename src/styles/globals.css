@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
 .main-background {
   background: rgb(17, 17, 17);
   background: linear-gradient(
@@ -10,6 +15,26 @@
     rgba(45, 45, 45, 1) 50%,
     rgba(17, 17, 17, 1) 100%
   );
+}
+
+.pattern {
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.064);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
 }
 
 .isolator {
