@@ -38,8 +38,7 @@
 
 .profile-picture {
   height: 25rem;
-  min-width: 25rem;
-  max-width: 25rem;
+  width: 25rem;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -67,14 +66,26 @@
 }
 
 @media (max-width: 880px) {
-  .photo-area-container {
-    scale: 0.8;
+  .profile-picture-border {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .profile-picture {
+    height: 20rem;
+    width: 20rem;
   }
 }
 
-@media (max-width: 400px) {
-  .photo-area-container {
-    scale: 0.6;
+@media (max-width: 450px) {
+  .profile-picture-border {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .profile-picture {
+    height: 15rem;
+    width: 15rem;
   }
 }
 

@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { FC } from "react";
-// import { FaRegNewspaper } from "react-icons/fa";
-// import { VscFolderActive } from "react-icons/vsc";
+
 import style from "./AboutMe.module.css";
 
 const HeaderSection: FC = () => {
@@ -13,31 +12,6 @@ const HeaderSection: FC = () => {
     </div>
   );
 };
-
-// const SquaresContainer: FC = () => {
-//   return (
-//     <div className="flex max-[660px]:w-[85%] min-[660px]:w-[75%] justify-center gap-5">
-//       <div
-//         className={`w-[10rem] h-[10rem] ${style["xp-projects-square"]} max-[415px]:scale-[0.8] bg-darkGreen rounded-[1rem] flex flex-col justify-center items-center gap-5`}
-//       >
-//         <FaRegNewspaper className="w-[2rem] h-[2rem] text-white" />
-//         <div className="text-center text-white">
-//           <h3 className="text-2xl">Experiencia</h3>
-//           <p>+2 años</p>
-//         </div>
-//       </div>
-//       <div
-//         className={`w-[10rem] h-[10rem] max-[415px]:scale-[0.8] ${style["xp-projects-square"]} bg-darkGreen rounded-[1rem] flex flex-col justify-center items-center gap-5`}
-//       >
-//         <VscFolderActive className="w-[2rem] h-[2rem] text-white" />
-//         <div className="text-center text-white">
-//           <h3 className="text-2xl">Proyectos</h3>
-//           <p>+10 completados</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 
 const ExperienceText: FC = () => {
   return (
@@ -80,7 +54,6 @@ const AboutMe: FC = () => {
       <div className={style["content-container"]}>
         <PhotoArea />
         <div className={style["about-me-container"]}>
-          {/* <SquaresContainer /> */}
           <ExperienceText />
         </div>
       </div>
