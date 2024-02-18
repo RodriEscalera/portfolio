@@ -21,12 +21,12 @@ const Squares: FC = () => {
       <AboutCard
         subtitle="+2 años"
         title="Experiencia"
-        icon={<VscFolderActive />}
+        icon={<FaRegNewspaper />}
       />
       <AboutCard
         subtitle="+10 completados"
         title="Proyectos"
-        icon={<FaRegNewspaper />}
+        icon={<VscFolderActive />}
       />
     </div>
   );
