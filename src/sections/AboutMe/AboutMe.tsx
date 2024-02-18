@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { FC } from "react";
-
 import style from "./AboutMe.module.css";
+import { FaRegNewspaper } from "react-icons/fa";
+import { VscFolderActive } from "react-icons/vsc";
+import AboutCard from "@/commons/AboutCard/AboutCard";
 
 const HeaderSection: FC = () => {
   return (
@@ -13,17 +15,45 @@ const HeaderSection: FC = () => {
   );
 };
 
+const Squares: FC = () => {
+  return (
+    <div className={style["squares-container"]}>
+      <AboutCard
+        subtitle="+2 años"
+        title="Experiencia"
+        icon={<VscFolderActive />}
+      />
+      <AboutCard
+        subtitle="+10 completados"
+        title="Proyectos"
+        icon={<FaRegNewspaper />}
+      />
+    </div>
+  );
+};
+
 const ExperienceText: FC = () => {
   return (
     <div className={style["experience-text-container"]}>
-      <p className="text-white">
-        Soy un desarrollador Fullstack con 2 años de experiencia en IT,
-        especializado en el diseño, desarrollo e implementación de aplicaciones
-        web de alta calidad. Mi enfoque en la colaboración y la satisfacción del
-        cliente me permite trabajar de la mano con otros profesionales para
-        alcanzar los objetivos de la empresa. Actualmente, estoy inmerso en
-        proyectos desafiantes que impulsan mi constante aprendizaje. ¡Espero
-        poder contribuir a tu próximo proyecto!
+      <p>
+        Soy un <span className="text-darkGreen">desarrollador Full Stack</span>{" "}
+        con <span className="text-darkGreen">2 años de experiencia en IT</span>,
+        especializado en el{" "}
+        <span className="text-darkGreen">
+          diseño, desarrollo e implementación de aplicaciones web de alta
+          calidad
+        </span>
+        . Mi enfoque en la{" "}
+        <span className="text-darkGreen">
+          colaboración y la satisfacción del cliente
+        </span>{" "}
+        me permite trabajar de la mano con otros profesionales para alcanzar los
+        objetivos de la empresa. Actualmente, estoy inmerso en proyectos
+        desafiantes que impulsan mi{" "}
+        <span className="text-darkGreen">constante aprendizaje</span>. ¡Espero
+        poder{" "}
+        <span className="text-darkGreen">contribuir a tu próximo proyecto</span>
+        !
       </p>
     </div>
   );
@@ -54,6 +84,7 @@ const AboutMe: FC = () => {
       <div className={style["content-container"]}>
         <PhotoArea />
         <div className={style["about-me-container"]}>
+          <Squares />
           <ExperienceText />
         </div>
       </div>

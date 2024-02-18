@@ -7,7 +7,7 @@ function Experience() {
       className="min-h-[100vh] w-full flex items-center flex-col"
     >
       <div className="w-full text-center mt-10 ">
-        <h2 className="text-4xl text-white">Mi Experiencia</h2>
+        {/* <h2 className="text-4xl text-white">Mi Experiencia</h2> */}
       </div>
     </section>
   );
