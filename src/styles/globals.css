@@ -4,7 +4,6 @@
 
 html {
   -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden;
 }
 
 .main-background {
@@ -15,6 +14,7 @@ html {
     rgba(45, 45, 45, 1) 50%,
     rgba(17, 17, 17, 1) 100%
   );
+  overflow-x: hidden;
 }
 
 .pattern {

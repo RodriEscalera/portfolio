@@ -42,10 +42,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav
-      className={`z-30 flex text-white justify-center items-center fixed right-1/2 translate-x-2/4 bottom-[2rem] w-[22rem] h-[4.3rem] rounded-[3rem] ${style["glass-effect"]}`}
-    >
-      <ul className="flex gap-10">
+    <nav className={`${style["nav"]} ${style["glass-effect"]}`}>
+      <ul className={style["ul"]}>
         <li>
           <IconButton
             onClick={onSelectNavButton}
