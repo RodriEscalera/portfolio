@@ -5,7 +5,6 @@ import { BiUser, BiBook } from "react-icons/bi";
 import { BsBriefcase } from "react-icons/bs";
 import IconButton from "@/commons/IconButton/IconButton";
 import { GoMail } from "react-icons/go";
-import { useRouter } from "next/navigation";
 import style from "./NavBar.module.css";
 
 const NavBar = () => {
@@ -26,8 +25,6 @@ const NavBar = () => {
       contact: false,
     });
 
-  const router = useRouter();
-
   const onSelectNavButton = (e: React.MouseEvent<HTMLButtonElement>) => {
     const name = e.currentTarget.name;
 
@@ -36,9 +33,9 @@ const NavBar = () => {
       newSelection[prop] = false;
     }
     newSelection[name] = true;
-
     setSelectionNavButtons(newSelection as TselectionNavButtons);
-    router.push(`/#${name}`);
+    const section = document.querySelector(`#${name}`);
+    section?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
