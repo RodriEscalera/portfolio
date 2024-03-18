@@ -9,7 +9,7 @@ import AboutCard from "@/commons/AboutCard/AboutCard";
 const HeaderSection: FC = () => {
   return (
     <div className="text-center mt-[2rem]">
-      <h2 className="text-4xl text-white">¿Quién soy?</h2>
+      <h2 className="text-4xl text-white font-bold">¿Quién soy?</h2>
       <h3 className="text-2xl text-darkGreen">Conoceme.</h3>
     </div>
   );
