@@ -60,14 +60,14 @@ const Home = () => {
           </h2>
         </div>
       </div>
-
       <div className="w-full flex justify-center gap-10 mt-[2rem]">
-        <Button className="scale-[1.2]">Descargar CV</Button>
+        <a href="/cv/RODRIGO ESCALERA CV F ES.pdf">
+          <Button className="scale-[1.2]">Descargar CV</Button>
+        </a>
         <Button className="scale-[1.2]" buttonType="contained">
           Hablemos!
         </Button>
       </div>
-
       <div className={style["icons-div-container"]}>
         <div className={style["icons-div"]}>
           {socialMedia.map((element: ISocialMedia, index: number) => (
@@ -77,7 +77,6 @@ const Home = () => {
           ))}
         </div>
       </div>
-
       <hr className="isolator absolute bottom-0" />
     </section>
   );
