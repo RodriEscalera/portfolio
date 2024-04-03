@@ -1,7 +1,7 @@
 .flip-card {
   background-color: transparent;
   width: 20rem;
-  height: 25rem;
+  height: 27rem;
   perspective: 1000px;
   font-family: sans-serif;
   position: relative;
@@ -47,6 +47,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 1rem;
+  color: white;
 }
 
 .flip-card-back {
@@ -86,6 +87,35 @@
   -webkit-backdrop-filter: blur(25px) saturate(100%);
   background-color: rgba(17, 25, 40, 0.65);
   border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-back-feats-content {
+  text-align: start;
+  overflow-y: scroll;
+  border-radius: 0.3rem;
+  backdrop-filter: blur(25px) saturate(100%);
+  -webkit-backdrop-filter: blur(25px) saturate(100%);
+  background-color: rgba(17, 25, 40, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-back-feats-content::-webkit-scrollbar {
+  width: 5px;
+  background-color: #4b4b4b;
+  border-radius: 5px;
+}
+
+.card-back-feats {
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.waves-container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
 }
 
 .wave {

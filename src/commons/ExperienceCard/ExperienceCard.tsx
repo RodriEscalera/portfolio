@@ -4,15 +4,7 @@ import { IExperienceCard } from "./ExperienceCard.types";
 
 const Waves: FC = () => {
   return (
-    <div
-      style={{
-        position: "absolute",
-        overflow: "hidden",
-        width: "100%",
-        height: "100%",
-        borderRadius: "1rem",
-      }}
-    >
+    <div className={style["waves-container"]}>
       <div className={style["wave"]}></div>
       <div className={style["wave"]}></div>
       <div className={style["wave"]}></div>
@@ -20,7 +12,7 @@ const Waves: FC = () => {
   );
 };
 
-const ExperienceCard: FC<IExperienceCard> = ({ companyName, stack }) => {
+const ExperienceCard: FC<IExperienceCard> = ({ companyName, stack, feats }) => {
   return (
     <div className={`${style["flip-card"]} ${style["playing"]}`}>
       <div className={style["flip-card-inner"]}>
@@ -42,6 +34,27 @@ const ExperienceCard: FC<IExperienceCard> = ({ companyName, stack }) => {
                   ))}
                 </div>
               </>
+            )}
+            <div className="mt-[0.6rem]" />
+            {feats && (
+              <div>
+                <p className={style["card-back-title"]}>Destacado:</p>
+                <div
+                  className={`${style["card-back-feats-content"]} ${
+                    stack && stack?.length >= 6 ? "h-[9rem]" : "h-[15rem]"
+                  }`}
+                >
+                  <div className="mt-[1rem]" />
+                  {feats.map((feat: string, index: number) => (
+                    <>
+                      <p className={style["card-back-feats"]} key={index}>
+                        • {feat}
+                      </p>
+                      <div className="mt-[1rem]" />
+                    </>
+                  ))}
+                </div>
+              </div>
             )}
           </div>
         </div>
