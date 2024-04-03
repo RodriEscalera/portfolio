@@ -77,7 +77,6 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <hr className="isolator absolute bottom-0" />
     </section>
   );
 };
