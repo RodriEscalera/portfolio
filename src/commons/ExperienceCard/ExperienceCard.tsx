@@ -12,14 +12,19 @@ const Waves: FC = () => {
   );
 };
 
-const ExperienceCard: FC<IExperienceCard> = ({ companyName, stack, feats }) => {
+const ExperienceCard: FC<IExperienceCard> = ({
+  companyName,
+  stack,
+  feats,
+  workPeriod,
+}) => {
   return (
     <div className={`${style["flip-card"]} ${style["playing"]}`}>
       <div className={style["flip-card-inner"]}>
         <Waves />
         <div className={style["flip-card-front"]}>
           <p className={style["title"]}>{companyName}</p>
-          <p>Enero 2023 - Enero 2024</p>
+          <p>{workPeriod}</p>
         </div>
         <div className={style["flip-card-back"]}>
           <div className={style["card-back-inner-content"]}>

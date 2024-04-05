@@ -24,6 +24,8 @@ function Experience() {
           "Integré APIs de terceros lo que permitió mejorar enormemente nuestros servicios.",
           "Desarrollé nuevos endpoints lo que permitió la integración y el trabajo con otras compañías.",
         ],
+
+        workPeriod: "Marzo 2022 - Abril 2023",
       },
       {
         name: "PLATAFORMA 5",
@@ -32,6 +34,7 @@ function Experience() {
           "Lideré y organicé equipos de prácticas profesionales mediante la metodología SCRUM.",
           "Potencié el crecimiento técnico de los estudiantes al brindar correcciones y retroalimentación individualizada sobre su código, generando un aumento exponencial en sus habilidades.",
         ],
+        workPeriod: "Abril 2023 - Enero 2024",
       },
       {
         name: "XAVIA IOT",
@@ -41,6 +44,7 @@ function Experience() {
           "Fui responsable de armar componentes reutilizables y agilizar el desarrollo de la aplicación.",
           "Implementé componentes que gestionan el acceso de las funcionalidades de la aplicación según el tipo de usuario (cliente y administrador).",
         ],
+        workPeriod: "Septiembre 2023 - Actualidad",
       },
     ];
   }, []);
@@ -57,6 +61,7 @@ function Experience() {
         {companies.map((company: ICompany, index: number) => (
           <div className={style["grid-item"]} key={index}>
             <ExperienceCard
+              workPeriod={company.workPeriod}
               stack={company.stack}
               feats={company.feats}
               companyName={company.name}
