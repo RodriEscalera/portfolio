@@ -1,17 +1,19 @@
 .grid-container {
-  width: 100%;
+  width: 90%;
   margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-item {
+.experience-info {
+  width: 80%;
+  max-width: 50rem;
   display: flex;
   justify-content: center;
-}
-
-@media (max-width: 1010px) {
-  .grid-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  margin-top: 3rem;
 }
