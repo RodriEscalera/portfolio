@@ -1,0 +1,26 @@
+.container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  margin-right: 5rem;
+  top: 0;
+}
+.square {
+  width: auto;
+  height: auto;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  background-color: black;
+  color: white;
+  top: 0;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-left: 0.5rem solid black; /* Este es el lado que crea la forma del triángulo */
+}
