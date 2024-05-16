@@ -26,10 +26,11 @@
     }
   },
   "include": [
+    "env.d.ts",
     "next-env.d.ts",
+    ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
     "tailwind.config.ts",
     "next.config.js",
     "postcss.config.js"

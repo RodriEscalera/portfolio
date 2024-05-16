@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiUser, BiBook } from "react-icons/bi";
-import { BsBriefcase } from "react-icons/bs";
+// import { BsBriefcase } from "react-icons/bs";
 import IconButton from "@/commons/IconButton/IconButton";
 import { GoMail } from "react-icons/go";
 import style from "./NavBar.module.css";
@@ -65,14 +65,14 @@ const NavBar = () => {
             icon={<BiBook />}
           />
         </li>
-        <li>
+        {/* <li>
           <IconButton
             onClick={onSelectNavButton}
             name="projects"
             isSelected={selectionNavButtons.projects}
             icon={<BsBriefcase />}
           />
-        </li>
+        </li> */}
         <li>
           <IconButton
             onClick={onSelectNavButton}

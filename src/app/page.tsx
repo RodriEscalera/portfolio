@@ -6,6 +6,8 @@ import AboutMe from "@/sections/AboutMe/AboutMe";
 import Experience from "@/sections/Experience/Experience";
 import wait from "@/utils/wait";
 import Loader from "@/components/Loader/Loader";
+import Contact from "@/sections/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 const Main = () => {
   const [isPageLoaded, setIsPageLoaded] = useState<boolean>(false);
@@ -27,6 +29,8 @@ const Main = () => {
           <Home />
           <AboutMe />
           <Experience />
+          <Contact />
+          <Footer />
         </div>
       ) : (
         <Loader />

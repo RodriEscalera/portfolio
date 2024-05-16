@@ -20,7 +20,7 @@ const Button: FC<IButton> = ({ children, buttonType, className }) => {
     }
   })();
   return (
-    <button className={`${style[buttonStyleClass]} ${className}`}>
+    <button className={`${className} ${style[buttonStyleClass]}`}>
       {children}
     </button>
   );

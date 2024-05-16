@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Cabin } from "next/font/google";
 import "../styles/globals.css";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
   title: "Rodrigo Escalera Portfolio",

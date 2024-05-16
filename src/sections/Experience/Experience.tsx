@@ -87,7 +87,6 @@ function Experience() {
           />
         ))}
       </div>
-      <div className="h-[10rem]"></div>
     </section>
   );
 }
