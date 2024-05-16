@@ -80,13 +80,11 @@ const FormContainer: FC = () => {
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      if (form !== null) {
-        await SendEmail(form);
-        emptyInputs();
-        toast.success("Correo enviado!", {
-          position: "top-center",
-        });
-      }
+      await SendEmail(form);
+      emptyInputs();
+      toast.success("Correo enviado!", {
+        position: "top-center",
+      });
     } catch (error: unknown) {
       toast.error("No se pudo enviar el correo.", {
         position: "top-center",
