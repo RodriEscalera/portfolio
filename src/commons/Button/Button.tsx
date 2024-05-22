@@ -7,7 +7,7 @@ interface IButton extends ComponentPropsWithoutRef<"button"> {
   buttonType?: "contained" | "outlined";
 }
 
-const Button: FC<IButton> = ({ children, buttonType, className }) => {
+const Button: FC<IButton> = ({ children, buttonType, className, ...rest }) => {
   const buttonStyleClass = (() => {
     if (!buttonType) {
       return "button-component-outlined";
@@ -20,7 +20,7 @@ const Button: FC<IButton> = ({ children, buttonType, className }) => {
     }
   })();
   return (
-    <button className={`${className} ${style[buttonStyleClass]}`}>
+    <button {...rest} className={`${className} ${style[buttonStyleClass]}`}>
       {children}
     </button>
   );

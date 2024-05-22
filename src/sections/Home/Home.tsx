@@ -41,6 +41,11 @@ const Home = () => {
     ];
   }, []);
 
+  const scrollToContact = (): void => {
+    const contactSection = document.querySelector("#contact");
+    contactSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section
       id="home"
@@ -64,7 +69,11 @@ const Home = () => {
         <a href="/cv/RODRIGO ESCALERA CV F ES.pdf">
           <Button className="scale-[1.2]">Descargar CV</Button>
         </a>
-        <Button className="scale-[1.2]" buttonType="contained">
+        <Button
+          onClick={scrollToContact}
+          className="scale-[1.2]"
+          buttonType="contained"
+        >
           Hablemos!
         </Button>
       </div>
